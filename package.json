@@ -1,0 +1,23 @@
+{
+  "name": "iw_chatt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "engines": {
+    "node": "10.13.0"
+  },
+    "keywords": [
+        "example",
+        "heroku"
+    ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "socket.io": "^2.1.1"
+  }
+}
