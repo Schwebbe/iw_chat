@@ -8,6 +8,7 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function(socket){
+    console.log('a user connected');
   socket.broadcast.emit('hi');
     socket.on('disconnect', function() {
         console.log('a user disconnected');
@@ -28,6 +29,8 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+
+const PORT = process.env.PORT || 3000;
+http.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
